@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import SearchBar from "@/components/SearchBar";
+import { PaginationDemo } from "@/components/Pagination";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,8 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="dark">
+      <body className={inter.className}>
+        <main className="flex justify-center items-center w-screen h-screen relative">
+          <SearchBar />
+          
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
