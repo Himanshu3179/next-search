@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/pagination"
 
 import { useSearchParams, usePathname, useRouter } from 'next/navigation';
+import { Suspense } from "react";
 export function PaginationDemo(
 
 ) {
@@ -51,6 +52,7 @@ export function PaginationDemo(
 
 
     return (
+
         <Pagination className=" fixed  bottom-5 backdrop-blur-lg z-[2] w-fit px-5 py-3 rounded-lg border shadow-inner shadow-neutral-200
             cursor-pointer 
             select-none
@@ -74,6 +76,7 @@ export function PaginationDemo(
 
             </PaginationContent>
         </Pagination>
+
     )
 }
 {/* <PaginationItem>

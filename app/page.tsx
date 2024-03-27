@@ -3,7 +3,6 @@ import AllItems from "@/components/AllItems";
 import { PaginationDemo } from "@/components/Pagination";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Suspense } from "react";
 
 
 export default function Home({

@@ -30,6 +30,8 @@ export async function POST(req: Request) {
       Number(skip) + Number(take)
     );
 
+    // await new Promise((resolve) => setTimeout(resolve, 2000));
+
     return NextResponse.json(paginatedItems, { status: 200 });
   } catch (error) {
     console.error(error);
